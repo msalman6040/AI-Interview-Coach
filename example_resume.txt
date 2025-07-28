@@ -1,0 +1,33 @@
+John Ahmed
+Brooklyn, NY | john.ahmed@email.com | (718) 555-1234 | linkedin.com/in/johnahmed | github.com/jahmeddev
+
+Summary:
+Results-driven Data Analyst with 2+ years of experience in analyzing large datasets to drive strategic business decisions. Skilled in Python, SQL, and Tableau. Adept at transforming complex data into actionable insights.
+
+Skills:
+- Data Analysis: Python (Pandas, NumPy), SQL, Excel, R
+- Data Visualization: Tableau, Power BI, Matplotlib, Seaborn
+- Machine Learning: Regression, Classification, Scikit-learn
+- Tools: Jupyter Notebook, Git, Google Sheets, MS Office
+- Soft Skills: Communication, Teamwork, Problem-Solving
+
+Experience:
+**Data Analyst | Fresh Market Inc. | New York, NY | Jan 2023 – Present**
+- Built dashboards using Tableau to track customer retention KPIs, improving client retention by 15%
+- Automated weekly reports using Python and SQL, reducing manual work by 60%
+- Cleaned and analyzed sales data from 3,000+ products to identify underperforming items
+
+**Data Intern | GreenData | Remote | Jun 2022 – Dec 2022**
+- Conducted exploratory data analysis on energy usage datasets
+- Presented findings to stakeholders, resulting in new energy-saving policy for two clients
+
+Education:
+Certificate in Data Science – IBM / Coursera – 2023 (In Progress)
+B.S. in Mathematics – City College of New York – 2022
+
+Certifications:
+- Google Data Analytics Certificate – 2023
+- Prompt Engineering for Developers – DeepLearning.AI & OpenAI – 2025
+
+Languages:
+English (native), Urdu (fluent), Spanish (conversational)
