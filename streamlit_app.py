@@ -1,8 +1,7 @@
 import streamlit as st
-import openai
+from openai import openAI
 
-# Set your OpenAI key (better: use secrets.toml or environment variable)
-openai.api_key = st.secrets["OPENAI_API_KEY"] if "OPENAI_API_KEY" in st.secrets else "sk-..."
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("🤖 AI Interview Coach")
 st.write("Upload your resume or paste the text. Get instant feedback, tailored questions, and suggestions.")
@@ -22,12 +21,14 @@ if st.button("🧠 Analyze & Generate Questions") and resume_input and job_title
     {resume_input}
     """
 
-    with st.spinner("Analyzing resume and generating questions..."):
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[{"role": "user", "content": prompt}]
-        )
-        output = response["choices"][0]["message"]["content"]
-
-    st.markdown("### 📝 Results:")
-    st.write(output)
+    with st.spinner("Analyzing resume and generating interview questions..."):
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4",
+                messages=[{"role": "user", "content": prompt}]
+    )
+            output = response["choices"][0]["message"]["content"]
+            st.markdown("### 📝 Results:")
+            st.write(output)
+        except Exception as e:
+            st.error(f"Something went wrong: {e}")
