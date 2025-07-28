@@ -24,7 +24,7 @@ if st.button("🧠 Analyze & Generate Questions") and resume_input and job_title
     with st.spinner("Analyzing resume and generating interview questions..."):
         try:
             response = client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}]
     )
             output = response["choices"][0]["message"]["content"]
