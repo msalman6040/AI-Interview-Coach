@@ -27,7 +27,7 @@ if st.button("🧠 Analyze & Generate Questions") and resume_input and job_title
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}]
     )
-            output = response["choices"][0]["message"]["content"]
+            output = response.choices[0].message.content
             st.markdown("### 📝 Results:")
             st.write(output)
         except Exception as e:
